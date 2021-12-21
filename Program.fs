@@ -1,6 +1,4 @@
-﻿open AOC2
-
-[<EntryPoint>]
+﻿[<EntryPoint>]
 let main args =
-    aoc2
+    AOC3.aoc
     0
