@@ -6,7 +6,12 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Include="Program.fs" />
+    <Content Include="1.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Compile Include="1.fs" />
   </ItemGroup>
+
+  <ItemGroup />
 
 </Project>
