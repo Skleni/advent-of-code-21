@@ -1,4 +1,1 @@
-﻿[<EntryPoint>]
-let main args =
-    AOC3.aoc
-    0
+﻿AOC4.aoc
