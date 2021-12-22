@@ -1,5 +1,4 @@
 ﻿module AOC5
-open System
 open System.IO
 open System.Collections.Generic
 
