@@ -6,6 +6,9 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Include="7.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="5.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
@@ -21,6 +24,7 @@
     <Compile Include="4.fs" />
     <Compile Include="5.fs" />
     <Compile Include="6.fs" />
+    <Compile Include="7.fs" />
     <Compile Include="Program.fs" />
   </ItemGroup>
 
