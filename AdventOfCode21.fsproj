@@ -59,6 +59,9 @@
     <Compile Include="15.fs">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Compile>
+    <Compile Include="16.fs">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Compile>
     <Compile Include="Program.fs" />
   </ItemGroup>
 
