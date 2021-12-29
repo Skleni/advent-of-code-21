@@ -1,4 +1,4 @@
-﻿module AOC16
+﻿module AOC8b
 
 open System
 open System.IO
@@ -54,7 +54,7 @@ let convertOutputs display =
     List.sum
 
 let aoc =
-    let lines = File.ReadLines("15.txt") |> List.ofSeq
+    let lines = File.ReadLines("8.txt") |> List.ofSeq
     let displays = parseLines lines
     let sum = displays |>
               List.map(convertOutputs) |>

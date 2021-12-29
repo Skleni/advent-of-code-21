@@ -1,4 +1,4 @@
-﻿module AOC11
+﻿module AOC6a
 
 open System
 open System.IO
@@ -24,5 +24,5 @@ let rec reproduce (fish: int list) days =
         reproduce (updatedFish @ newFish) (days - 1)
 
 let aoc =
-    let fish = parseFish(File.ReadAllText("11.txt"))
+    let fish = parseFish(File.ReadAllText("6.txt"))
     printfn "%i" (reproduce fish 80)

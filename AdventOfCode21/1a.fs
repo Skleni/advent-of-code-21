@@ -1,4 +1,4 @@
-﻿module AOC1
+﻿module AOC1a
 open System
 open System.IO
 

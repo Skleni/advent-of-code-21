@@ -1,4 +1,4 @@
-﻿module AOC15
+﻿module AOC8a
 
 open System
 open System.IO
@@ -26,7 +26,7 @@ let countUnique (displays: Display list) =
                         | _ -> 0)
 
 let aoc =
-    let lines = File.ReadLines("15.txt") |> List.ofSeq
+    let lines = File.ReadLines("8.txt") |> List.ofSeq
     let displays = parseLines lines
     let count = countUnique displays
 

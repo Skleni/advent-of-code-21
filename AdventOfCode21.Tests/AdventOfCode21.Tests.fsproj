@@ -1,0 +1,49 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+
+    <IsPackable>false</IsPackable>
+    <GenerateProgramFile>false</GenerateProgramFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="1a.fs" />
+    <Compile Include="1b.fs" />
+    <Compile Include="2a.fs" />
+    <Compile Include="2b.fs" />
+    <Compile Include="3a.fs" />
+    <Compile Include="3b.fs" />
+    <Compile Include="4a.fs" />
+    <Compile Include="4b.fs" />
+    <Compile Include="5a.fs" />
+    <Compile Include="5b.fs" />
+    <Compile Include="6a.fs" />
+    <Compile Include="6b.fs" />
+    <Compile Include="7a.fs" />
+    <Compile Include="7b.fs" />
+    <Compile Include="8a.fs" />
+    <Compile Include="8b.fs" />
+    <Compile Include="9a.fs" />
+    <Compile Include="9b.fs" />
+    <Compile Include="Program.fs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.11.0" />
+    <PackageReference Include="xunit" Version="2.4.1" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.4.3">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="coverlet.collector" Version="3.1.0">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\AdventOfCode21\AdventOfCode21.fsproj" />
+  </ItemGroup>
+
+</Project>

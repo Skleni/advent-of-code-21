@@ -1,8 +1,7 @@
-﻿module AOC12
+﻿module AOC6b
 
 open System
 open System.IO
-open System.Linq
 open System.Collections.Generic
 
 let parseFish (line: string) =
@@ -41,7 +40,7 @@ let countFish fish days =
     List.sum
 
 let aoc =
-    let fish = parseFish(File.ReadAllText("11.txt"))
+    let fish = parseFish(File.ReadAllText("6.txt"))
 
     let count = countFish fish 256
 

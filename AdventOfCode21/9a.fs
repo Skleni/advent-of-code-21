@@ -1,4 +1,4 @@
-﻿module AOC17
+﻿module AOC9a
 
 open System
 open System.IO
@@ -42,6 +42,6 @@ let sumRiskLevels (array: int[,]) =
     List.sumBy(fun c -> 1 + (at array c))
 
 let aoc =
-    let array = buildArray(File.ReadLines("17.txt"))    
+    let array = buildArray(File.ReadLines("9.txt"))    
     let sum = sumRiskLevels array
     printfn "%i" sum

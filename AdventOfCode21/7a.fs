@@ -1,4 +1,4 @@
-﻿module AOC14
+﻿module AOC7a
 
 open System
 open System.IO
@@ -10,7 +10,7 @@ let parsePositions (line: string) =
 
 let calculateFuel positions position =
     positions |>
-    List.sumBy(fun p -> [1..abs(position - p)] |> List.sum)
+    List.sumBy(fun p -> abs(position - p))
 
 let calculatePositionWithLeastAmountOfFuel positions =
     let min = List.min positions
@@ -20,7 +20,7 @@ let calculatePositionWithLeastAmountOfFuel positions =
     List.minBy(calculateFuel positions)
 
 let aoc =
-    let line = File.ReadAllText("13.txt")
+    let line = File.ReadAllText("7.txt")
     let positions = parsePositions line
     let position = calculatePositionWithLeastAmountOfFuel positions
     let fuel = calculateFuel positions position

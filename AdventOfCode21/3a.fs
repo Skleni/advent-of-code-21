@@ -1,4 +1,4 @@
-﻿module AOC5
+﻿module AOC3a
 open System.IO
 open System.Collections.Generic
 
@@ -22,7 +22,7 @@ let calcRates (lines: IEnumerable<string>) =
 
 let aoc =
     let (g, e) = 
-        File.ReadLines("5.txt") |>
+        File.ReadLines("3.txt") |>
         calcRates
    
     printfn "%i" (g * e)

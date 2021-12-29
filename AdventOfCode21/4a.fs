@@ -1,4 +1,4 @@
-﻿module AOC8
+﻿module AOC4a
 
 open System
 open System.IO
@@ -54,15 +54,13 @@ let calcWinnerScore (lines: string list) =
 
     let rec draw boards (randomNumbers: int list) =
         let newBoards = markBoards boards randomNumbers.Head
-        let remainingBoards = newBoards |>
-                              List.filter(fun b -> not(hasWon(b)))
-        if remainingBoards.IsEmpty
-        then score newBoards.Head * randomNumbers.Head
-        else draw remainingBoards randomNumbers.Tail
+        match List.tryFind hasWon newBoards with
+        | Some(board) -> score(board) * randomNumbers.Head
+        | None -> draw newBoards randomNumbers.Tail
 
     draw boards randomNumbers
 
 let aoc =
-    let lines = List.ofSeq(File.ReadLines("7.txt"))
+    let lines = List.ofSeq(File.ReadLines("4.txt"))
     let score = calcWinnerScore lines
     printfn "%i" score

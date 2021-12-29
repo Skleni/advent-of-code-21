@@ -1,4 +1,4 @@
-﻿module AOC4
+﻿module AOC2b
 open System
 open System.IO
 open System.Collections.Generic
@@ -19,7 +19,7 @@ let calcPosition (lines: IEnumerable<string>) =
 
 let aoc =
     let (hor, depth, aim) =
-        File.ReadLines("3.txt") |>
+        File.ReadLines("2.txt") |>
         calcPosition
    
     printfn "%i" (hor * depth)

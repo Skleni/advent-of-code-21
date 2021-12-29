@@ -1,4 +1,4 @@
-﻿module AOC6
+﻿module AOC3b
 
 open System.IO
 open System.Collections.Generic
@@ -39,7 +39,7 @@ let calcRates (lines: IEnumerable<string>) =
 
 let aoc =
     let (oxygenGenerator, o2Scrubber) = 
-        File.ReadLines("5.txt") |>
+        File.ReadLines("3.txt") |>
         calcRates
    
     printfn "%i" (oxygenGenerator * o2Scrubber)
